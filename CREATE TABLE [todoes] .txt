@@ -1,0 +1,24 @@
+
+sql server
+
+CREATE TABLE [dbo].[todoes] (
+    [id]      INT            IDENTITY (1, 1) NOT NULL,
+    [summary] NVARCHAR (MAX) NULL,
+    [detail]  NVARCHAR (MAX) NULL,
+    [limit]   DATETIME       NOT NULL,
+    [done]    BIT            NOT NULL,
+    CONSTRAINT [PK_dbo.todoes] PRIMARY KEY CLUSTERED ([id] ASC)
+);
+
+
+mysql 
+
+CREATE TABLE `todoes` (
+  `id`      int(11) NOT NULL AUTO_INCREMENT,
+  `summary` char(45) DEFAULT NULL,
+  `detail`  char(45) DEFAULT NULL,
+  `limit`   DATETIME DEFAULT NULL,
+  `done`    bit(1)   DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8
+

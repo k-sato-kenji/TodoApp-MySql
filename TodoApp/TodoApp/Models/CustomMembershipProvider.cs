@@ -112,6 +112,8 @@ namespace TodoApp.Models
         public override bool ValidateUser(string username, string password)
         {
             // 固定で設定する。
+            // id : administrator pass : password
+            // id : user          pass : password
             if ("administrator".Equals(username) && "password".Equals(password))
             {
                 return true;

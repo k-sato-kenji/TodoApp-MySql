@@ -22,7 +22,7 @@ namespace TodoApp
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "todoes", action = "Index", id = UrlParameter.Optional } // 最初のページの設定
+                defaults: new { controller = "Todoes", action = "Index", id = UrlParameter.Optional } // 最初のページの設定
             );
         }
     }

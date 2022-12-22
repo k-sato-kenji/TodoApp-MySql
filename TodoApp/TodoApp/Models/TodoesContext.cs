@@ -6,9 +6,15 @@ using System.Web;
 
 namespace TodoApp.Models
 {
-    public class TodoesContext : DbContext
 
-     {
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
+
+    public class TodoesContext : DbContext
+    {
+        public TodoesContext() : base("MyCon")
+        {
+
+        }
 
         public DbSet<todo> todos { get; set; }
 

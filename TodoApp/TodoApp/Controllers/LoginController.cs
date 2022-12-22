@@ -46,7 +46,7 @@ namespace TodoApp.Controllers
 
         //  logout の実装
 
-        public ActionResult Signout()
+        public ActionResult SignOut()
         {
             // 認証クッキーを削除される。
             FormsAuthentication.SignOut();
